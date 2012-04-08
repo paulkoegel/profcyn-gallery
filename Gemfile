@@ -7,7 +7,7 @@ gem 'mysql2'
 gem 'unicorn'
 gem 'jquery-rails'
 gem 'compass-rails'
-gem 'slim'
+gem 'haml-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

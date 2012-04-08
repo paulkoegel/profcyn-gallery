@@ -1,3 +1,6 @@
 #= require jquery
 #= require jquery_ujs
-#= require_tree .
+#= require initialisation
+#= require image_file_list
+#= require pages
+#= require_self
