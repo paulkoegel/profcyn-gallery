@@ -2,14 +2,20 @@ source 'https://rubygems.org'
 
 gem 'rails', '~>3.2'
 
-gem 'mysql2'
-
 gem 'unicorn'
 gem 'jquery-rails'
 gem 'compass-rails'
 gem 'haml-rails'
 
-gem 'dimensions'
+group :development do
+  gem 'mysql2'
+  gem 'dimensions' # pure Ruby implementation to retrieve image files' dimension
+  gem 'heroku'
+end
+
+group :production do
+  gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
