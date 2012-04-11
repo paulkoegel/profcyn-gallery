@@ -8,6 +8,9 @@ gem 'compass-rails'
 gem 'haml-rails'
 gem 'sass-rails',   '~> 3.2.3'
 
+gem 'ember-rails'
+gem 'gon'
+
 group :development do
   gem 'mysql2'
   gem 'dimensions' # pure Ruby implementation to retrieve image files' dimension
