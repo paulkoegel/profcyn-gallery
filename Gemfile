@@ -9,7 +9,9 @@ gem 'haml-rails'
 gem 'sass-rails',   '~> 3.2.3'
 
 gem 'ember-rails'
+gem 'rabl' # must appear before 'gon'
 gem 'gon'
+gem 'yajl-ruby', :require => "yajl"
 
 group :development do
   gem 'mysql2'
