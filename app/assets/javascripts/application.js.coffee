@@ -12,7 +12,7 @@
 #= require_tree ./app/templates
 
 #= require initialisation
-#= require image_files
+# require image_files
 #= require helpers
 #= require pages
 #= require_self
