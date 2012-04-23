@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120411230543) do
+ActiveRecord::Schema.define(:version => 20120423185012) do
 
   create_table "images", :force => true do |t|
     t.string   "path"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(:version => 20120411230543) do
     t.datetime "taken_at"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string   "country"
+    t.string   "city"
+    t.string   "region"
+    t.string   "kind"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
