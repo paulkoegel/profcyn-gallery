@@ -1,2 +1,8 @@
 .gallery
   %h1 Photos from Taiwan &amp; Thailand
+
+  %h2 Manage photos:
+  %li Upload new photo
+  = form_for @new_image do |f|
+    = f.file_field :file
+    = f.submit
