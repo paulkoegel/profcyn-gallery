@@ -1,6 +1,12 @@
 $ ->
   ProfCyn.image = ProfCyn.Image.create(gon.image)
 
+  # $('#new_image').fileupload
+  #   dataType: "json"
+  #   done: (e, data) ->
+  #     $.each data.result, (index, file) ->
+  #       $("<p/>").text(file.name).appendTo document.body
+
   # _.times ProfCyn.image_files.length, (counter) ->
   #   $('.gallery').append('<img src="" height="' + ProfCyn.image_files[counter].height + '" width="' + ProfCyn.image_files[counter].width + '" data-counter="' + counter + '">')
   #   if (counter+1) % Math.floor(ProfCyn.preloadCount/2) == 0
