@@ -1,5 +1,4 @@
 $ ->
-  console.log JSON.stringify(gon.image)
   ProfCyn.image = ProfCyn.Image.create(gon.image)
 
   # _.times ProfCyn.image_files.length, (counter) ->
