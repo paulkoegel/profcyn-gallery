@@ -14,6 +14,7 @@ gem 'gon'
 gem 'yajl-ruby', :require => "yajl"
 
 gem 'dropbox-api'
+gem 'settingslogic'
 
 # Gems used only for assets and not required
 # in production environments by default.
