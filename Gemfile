@@ -13,6 +13,8 @@ gem 'rabl' # must appear before 'gon'
 gem 'gon'
 gem 'yajl-ruby', :require => "yajl"
 
+gem 'dropbox-api'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
