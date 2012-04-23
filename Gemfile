@@ -13,16 +13,6 @@ gem 'rabl' # must appear before 'gon'
 gem 'gon'
 gem 'yajl-ruby', :require => "yajl"
 
-group :development do
-  gem 'mysql2'
-  gem 'dimensions' # pure Ruby implementation to retrieve image files' dimension
-  gem 'heroku'
-end
-
-group :production do
-  gem 'pg'
-end
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -30,14 +20,35 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :production do
+  gem 'pg'
+end
+
+group :development do
+  gem 'mysql2'
+  gem 'dimensions' # pure Ruby implementation to retrieve image files' dimension
+  gem 'heroku'
+  gem 'taps' # required to dump Heroku DB
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~>2.6'
+  gem 'factory_girl_rails', '>=1.1.rc1'
+  # gem 'ruby-debug19'
+end
+
+group :test do
+  gem 'shoulda-matchers', :git => 'git://github.com/thoughtbot/shoulda-matchers.git'
+  gem 'database_cleaner'
+  gem 'simplecov', require: false
+  gem 'webmock'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
