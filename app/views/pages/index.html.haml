@@ -3,6 +3,6 @@
 
   %h2 Manage photos:
   %li Upload new photo
-  = form_for @new_image do |f|
-    = f.file_field :file
+  = form_for @new_image, :html => {:multipart => true} do |f|
+    = f.file_field :files, :multiple => true
     = f.submit
