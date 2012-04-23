@@ -17,3 +17,5 @@
 
 app/assets/images/taiwan
 app/assets/images/thailand
+config/initializers/dropbox.rb
+README.mdown
