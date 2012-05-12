@@ -11,7 +11,7 @@ gem 'rabl' # must appear before 'gon'
 gem 'gon'
 gem 'yajl-ruby', :require => "yajl"
 
-gem 'dropbox-api'
+gem 'dropbox-api', :path => '~/profcyn-gallery/dropbox-api'
 gem 'settingslogic'
 
 # Gems used only for assets and not required
