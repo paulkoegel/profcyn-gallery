@@ -4,9 +4,9 @@ gem 'rails', '~>3.2'
 
 gem 'unicorn'
 gem 'jquery-rails'
+gem 'rails-backbone'
 gem 'haml-rails'
 
-gem 'ember-rails'
 gem 'rabl' # must appear before 'gon'
 gem 'gon'
 gem 'yajl-ruby', :require => "yajl"
@@ -22,6 +22,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'compass-rails'
   gem 'compass-normalize'
+  gem 'haml_coffee_assets'
+  gem 'execjs'
 end
 
 group :production do
