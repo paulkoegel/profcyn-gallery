@@ -1,8 +1,5 @@
 .gallery
   %h1 Photos from Taiwan &amp; Thailand
+  = image_tag 'taiwan/2012-03-01-07.46.33-1.jpg', :id => 'da_image'
 
-  %h2 Manage photos:
-  %li Upload new photo
-  = form_for @new_image, :html => {:multipart => true} do |f|
-    = f.file_field :files, :multiple => true
-    = f.submit
+  = link_to 'Load image', '#', :class => 'load-image'

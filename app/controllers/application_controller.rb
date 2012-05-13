@@ -8,5 +8,4 @@ class ApplicationController < ActionController::Base
       @client = Dropbox::API::Client.new(:token => Settings.dropbox.token, :secret => Settings.dropbox.secret)
     end
 
-
 end

@@ -1,4 +1,5 @@
 $ ->
+
   window.Gallery = Backbone.Model.extend()
 
   window.GalleryView = Backbone.View.extend(
@@ -27,3 +28,8 @@ $ ->
     else
       window.gallery.set({title: 'Thailand'})
   )
+
+
+  $('.load-image').click (event) ->
+    event.preventDefault()
+    $('#da_image').attr('src', 'images/1.jpeg')
