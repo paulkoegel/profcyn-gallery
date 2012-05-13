@@ -40,7 +40,8 @@ end
 group :development, :test do
   gem 'rspec-rails', '~>2.6'
   gem 'factory_girl_rails', '>=1.1.rc1'
-  # gem 'ruby-debug19'
+  gem 'jasmine-rails'
+  gem 'debugger'
 end
 
 group :test do
