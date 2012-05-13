@@ -1,10 +1,8 @@
-%h1 Hello from hello_world.jst.hamlc, a HAMLCoffee template
-.calculation= 1+1
-.color= $('.gallery h1').eq(0).css('color')
-.title
-  title:
+title:
+%h2.title
   = @title
-.photographer
-  photographer:
+photographer:
+%h2.photographer
   = @photographer
-\-----
+%a{:href => '#', :class => 'toggler'}
+  TOGGLE TITLE
