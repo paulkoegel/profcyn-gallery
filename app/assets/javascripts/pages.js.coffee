@@ -1,7 +1,7 @@
 $ ->
-  $('body').append JST['hello_world']()
+  # $('body').append JST['hello_world']()
 
-  #ProfCyn.image = ProfCyn.Image.create(gon.image)
+  # ProfCyn.image = ProfCyn.Image.create(gon.image)
 
   # $('#new_image').fileupload
   #   dataType: "json"

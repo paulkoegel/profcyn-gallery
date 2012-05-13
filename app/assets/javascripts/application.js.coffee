@@ -6,6 +6,7 @@
 #= require jquery.fileupload
 #= require jquery_ujs
 #= require underscore-1.3.1-min
+#= require backbone
 
 #= require hamlcoffee
 #= require_tree ../templates
