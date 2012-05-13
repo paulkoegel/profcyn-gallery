@@ -5,8 +5,9 @@ GIT
     shoulda-matchers (1.1.0)
       activesupport (>= 3.0.0)
 
-PATH
-  remote: ~/profcyn-gallery/dropbox-api
+GIT
+  remote: git@github.com:paulwittmann/dropbox-api.git
+  revision: bb3d8e57eeda01c7f47a4e70764475c76660940c
   specs:
     dropbox-api (0.2.1)
       hashie
