@@ -11,9 +11,12 @@
     /[if lt IE 9]
       = stylesheet_link_tag 'ie'
     = include_gon(:camel_case => true)
-    = javascript_include_tag 'application'
+    -#= javascript_include_tag 'application'
     = csrf_meta_tags
 
   %body{:class => "#{controller_name} #{action_name}"}
+    .navi
+      = link_to 'Taiwan', location_images_path('taiwan')
+      = link_to 'Thailand', location_images_path('thailand')
     .content-wrapper
       = yield

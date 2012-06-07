@@ -1,5 +1,7 @@
 .gallery
   %h1 Photos from Taiwan &amp; Thailand
-  = image_tag 'taiwan/2012-03-01-07.46.33-1.jpg', :id => 'da_image'
 
-  = link_to 'Load image', '#', :class => 'load-image'
+  - @images.each do |image|
+    = image_tag image.url
+
+  -#= link_to 'Load image', '#', :class => 'load-image'

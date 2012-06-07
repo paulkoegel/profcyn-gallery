@@ -2,14 +2,15 @@ class ImagesController < ApplicationController
 
   before_filter :init_dropbox_client
 
-  caches_page :show
+  #caches_page :show
 
   def index
-    @images = Image.all
+    @location = Location.find_by_country(params[:location_id] || 'taiwan')
+    @images = @location.images
   end
 
   def show
-    send_data @photo = @client.ls('galleries').first.ls.first.download, :type => 'image/jpeg', :disposition => 'inline'
+    #send_data @photo = @client.ls('galleries').first.ls.first.download, :type => 'image/jpeg', :disposition => 'inline'
   end
 
   def edit

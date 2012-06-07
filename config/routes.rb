@@ -1,7 +1,12 @@
 ProfcynGallery::Application.routes.draw do
-  root :to => 'pages#index'
+  root :to => 'images#index'
 
   resources :images
+
+  resources :location do
+    resources :images
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

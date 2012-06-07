@@ -1,2 +1,5 @@
-%h1 Images#index
-%p Find me in app/views/images/index.html.haml
+.gallery
+  %h1 Photos from Taiwan &amp; Thailand
+
+  - @images.each do |image|
+    = image_tag image.url
