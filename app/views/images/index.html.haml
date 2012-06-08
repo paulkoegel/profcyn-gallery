@@ -1,5 +1,9 @@
-.gallery
-  %h1 Photos from Taiwan &amp; Thailand
+%h1.m-gallery-headline Photos from Taiwan &amp; Thailand
 
-  - @images.each do |image|
-    = image_tag image.url
+.gallery
+  = image_tag @large_image.url || @large_image.local_path, :class => 'm-image-large'
+  %ul.m-thumbnail-bar
+    - @images.each_with_index do |image, index|
+      %li.m-thumbnail-bar-item
+        = image_tag image.url || image.local_path, :class => 'm-image-thumbnail'
+

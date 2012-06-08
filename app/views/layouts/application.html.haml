@@ -15,8 +15,8 @@
     = csrf_meta_tags
 
   %body{:class => "#{controller_name} #{action_name}"}
-    .navi
-      = link_to 'Taiwan', location_images_path('taiwan')
-      = link_to 'Thailand', location_images_path('thailand')
+    .m-gallery-switcher
+      :erb
+        <%= link_to 'Taiwan', location_images_path('taiwan'), :class => 'm-gallery-switcher-item' %> | <%= link_to 'Thailand', location_images_path('thailand'), :class => 'm-gallery-switcher-item' %>
     .content-wrapper
       = yield
