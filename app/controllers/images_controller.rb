@@ -6,7 +6,8 @@ class ImagesController < ApplicationController
 
   def index
     @location = Location.find_by_country(params[:location_id] || 'taiwan')
-    @images = @location.images
+    @images = @location.images.limit(10)
+    @large_image = @images.slice!(0)
   end
 
   def show
