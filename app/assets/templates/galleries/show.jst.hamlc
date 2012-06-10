@@ -1,0 +1,12 @@
+.m-gallery
+  %h1.m-gallery-headline= @title
+
+  %ul.m-images-list-large
+    - _.each gon.images[0...10], (image, index) ->
+      %li
+        %img{:src => image.url || image.local_path, :class => 'm-images-list-large-item' + (if index == 0 then ' active' else '')}
+
+  %ul.m-images-list-thumbnail
+    - _.each gon.images[0...10], (image, index) ->
+      %li
+        %img{:src => image.url || image.local_path, :class => 'm-images-list-thumbnail-item'}

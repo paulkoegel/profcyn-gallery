@@ -11,12 +11,9 @@
     /[if lt IE 9]
       = stylesheet_link_tag 'ie'
     = include_gon(:camel_case => true)
-    -#= javascript_include_tag 'application'
+    = javascript_include_tag 'application'
     = csrf_meta_tags
 
   %body{:class => "#{controller_name} #{action_name}"}
-    .m-gallery-switcher
-      :erb
-        <%= link_to 'Taiwan', location_images_path('taiwan'), :class => 'm-gallery-switcher-item' %> | <%= link_to 'Thailand', location_images_path('thailand'), :class => 'm-gallery-switcher-item' %>
-    .content-wrapper
+    .main-content-wrapper
       = yield

@@ -1,0 +1,6 @@
+.m-gallery-switcher
+  - @galleries.each_with_index do |gallery, index|
+    :erb
+      <%= link_to gallery.title, gallery_path(gallery.slug), :class => 'm-gallery-switcher-item' %><%= index == @galleries.size-1 ? nil : ' | ' %>
+
+.m-gallery

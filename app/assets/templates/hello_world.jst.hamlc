@@ -1,8 +1,0 @@
-title:
-%h2.title
-  = @title
-photographer:
-%h2.photographer
-  = @photographer
-%a{:href => '#', :class => 'toggler'}
-  TOGGLE TITLE
