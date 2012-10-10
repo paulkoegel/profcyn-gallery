@@ -1,20 +1,20 @@
 development:
-  adapter: mysql2
-  encoding: utf8
-  username: root
+  adapter: postgresql
+  database: profcyn_development
+  username: paul
   password: 
-  database: profcyn-gallery_development
-
-test: &test
-  adapter: mysql2
   encoding: utf8
-  username: root
+  
+test:
+  adapter: postgresql
+  database: profcyn_test
+  username: paul
   password: 
-  database: profcyn-gallery_test
-
+  encoding: utf8
+  
 production:
-  adapter: mysql2
-  encoding: utf8
-  username: root
+  adapter: postgresql
+  database: profcyn_production
+  username: paul
   password: 
-  database: profcyn-gallery_production
+  encoding: utf8
